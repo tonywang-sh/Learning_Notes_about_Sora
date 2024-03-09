@@ -1,5 +1,5 @@
 ## Transformer LLM学习笔记
-####1. Attention
+#### 1. Attention
 
 Attention机制是一种在处理时序相关问题的时候常用的技术，主要用于处理序列数据。
 
@@ -20,7 +20,7 @@ Attention机制是一种在处理时序相关问题的时候常用的技术，�
 
 
 
-####2.Tokenizer分词
+#### 2.Tokenizer分词
 在使用GPT BERT模型输入词语常常会先进行tokenize ，tokenize的目标是把输入的文本流，切分成一个个子串，每个子串相对有完整的语义，便于学习embedding表达和后续模型的使用。
 
 tokenize有三种粒度：word/subword/char
@@ -30,7 +30,7 @@ tokenize有三种粒度：word/subword/char
 3) subword/子词级，它介于字符和单词之间。比如说'Transformers'可能会被分成'Transform'和'ers'两个部分。这个方案平衡了词汇量和语义独立性，是相对较优的方案。它的处理原则是，常用词应该保持原状，生僻词应该拆分成子词以共享token压缩空间。
 
 
-####3. Transformer 案例实践
+#### 3. Transformer 案例实践
 文本分类实验，二分类文本，近5K文本样本
 
 模型case1: transformer结构， Embedding + 单层SelfAttention + MLP, 
